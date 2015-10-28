@@ -8,7 +8,7 @@ var extend = function(obj) {
 }
 
 var seedify = function(seed){
-	if (util.isNumber(seed) || util.isString(seed)) return seed;
+	if (/(number|string)/i.test(Object.prototype.toString.call(seed).match(/^\[object (.*)\]$/)[1])) return seed;
 	if (isNaN(seed)) return Number(String((this.strSeed = seed)).split('').map(function(x){return x.charCodeAt(0)}).join(''));
 	return seed;
 }
