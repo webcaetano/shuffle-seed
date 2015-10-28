@@ -1,15 +1,11 @@
 var seedrandom = require('seedrandom');
 var util = require('util');
+var self = {};
 
 var extend = function(obj) {
 	for (var i = 1; i < arguments.length; i++) for (var key in arguments[i]) obj[key] = arguments[i][key];
 	return obj;
 }
-
-// var getType = function(){
-// 	return Object.prototype.toString.call(obj).match(/^\[object (.*)\]$/)[1];
-// }
-
 
 var getMap = function(size,seed){
 	seed = seed || 'none';
@@ -30,11 +26,9 @@ var getMap = function(size,seed){
 	return resp;
 }
 
-// var defaults = {
-// 	seed:undefined
-// }
-
-var self = {};
+var seedRand = function(func,min,max){
+	return Math.floor(func() * (max - min + 1)) + min;
+}
 
 self.shuffle = function(arr,seed){
 	if (!util.isArray(arr)) return null;
@@ -44,13 +38,10 @@ self.shuffle = function(arr,seed){
 	var rng = seedrandom(seed);
 	var resp = [];
 	var keys = [];
-	var rand = function(min,max){
-		return Math.floor(rng() * (max - min + 1)) + min;
-	}
 
 	for(var i=0;i<size;i++) keys.push(i);
 	for(var i=0;i<size;i++){
-		var r = rand(0,keys.length-1);
+		var r = seedRand(rng,0,keys.length-1);
 		var g = keys[r];
 		keys.splice(r,1);
 		resp.push(arr[g]);
@@ -67,9 +58,6 @@ self.unshuffle = function(arr,seed){
 	var resp = [];
 	var map = [];
 	var keys = [];
-	var rand = function(min,max){
-		return Math.floor(rng() * (max - min + 1)) + min;
-	}
 
 	for(var i=0;i<size;i++) {
 		resp.push(null);
@@ -77,7 +65,7 @@ self.unshuffle = function(arr,seed){
 	}
 
 	for(var i=0;i<size;i++){
-		var r = rand(0,keys.length-1);
+		var r = seedRand(rng,0,keys.length-1);
 		var g = keys[r];
 		keys.splice(r,1);
 		resp[g]=arr[i];
