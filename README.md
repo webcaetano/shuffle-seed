@@ -1,6 +1,6 @@
 # Seed-shuffle
 
-[![Build Status](https://travis-ci.org/webcaetano/seed-shuffle.svg)](https://travis-ci.org/webcaetano/seed-shuffle) 
+[![Build Status](https://travis-ci.org/webcaetano/seed-shuffle.svg)](https://travis-ci.org/webcaetano/seed-shuffle) [![npm version](https://badge.fury.io/js/shuffle-seed.svg)](https://badge.fury.io/js/shuffle-seed)
 
 Nodejs module to Shuffle an Array with seed :seedling:
 
