@@ -17,7 +17,7 @@ describe('shuffle-seed', function() {
 	it('should shuffle array with seed', function(done) {
 		var resp = shuffleSeed.shuffle(a,'Kappa');
 
-		// console.log(resp)
+		console.log(resp)
 		expect(resp).to.deep.not.equal(a);
 		expect(resp).to.have.length(a.length);
 		done();
@@ -27,7 +27,7 @@ describe('shuffle-seed', function() {
 		var shuffled = shuffleSeed.shuffle(a,'Kappa');
 		var resp = shuffleSeed.unshuffle(shuffled,'Kappa');
 
-		// console.log(resp)
+		console.log(resp)
 		expect(resp).to.deep.equal(a);
 		expect(resp).to.have.length(a.length);
 		done();
