@@ -33,4 +33,77 @@ describe('shuffle-seed', function() {
 		done();
 	});
 
+	it('should shuffle and unsuffle array with float seed', function(done) {
+		var seed = 12.3;
+		var resp = shuffleSeed.shuffle(a,seed);
+		var unshuffle = shuffleSeed.unshuffle(resp,seed);
+
+		console.log(resp)
+		console.log(unshuffle);
+		expect(unshuffle).to.deep.equal(a);
+		expect(unshuffle).to.have.length(a.length);
+		expect(resp).to.deep.not.equal(a);
+		expect(resp).to.have.length(a.length);
+		done();
+	});
+
+
+	it('should shuffle and unsuffle array with number seed', function(done) {
+		var seed = 11;
+		var resp = shuffleSeed.shuffle(a,seed);
+		var unshuffle = shuffleSeed.unshuffle(resp,seed);
+
+		console.log(resp)
+		console.log(unshuffle);
+		expect(unshuffle).to.deep.equal(a);
+		expect(unshuffle).to.have.length(a.length);
+		expect(resp).to.deep.not.equal(a);
+		expect(resp).to.have.length(a.length);
+		done();
+	});
+
+
+	it('should shuffle and unsuffle array with boolean seed', function(done) {
+		var seed = true;
+		var resp = shuffleSeed.shuffle(a,seed);
+		var unshuffle = shuffleSeed.unshuffle(resp,seed);
+
+		console.log(resp)
+		console.log(unshuffle);
+		expect(unshuffle).to.deep.equal(a);
+		expect(unshuffle).to.have.length(a.length);
+		expect(resp).to.deep.not.equal(a);
+		expect(resp).to.have.length(a.length);
+		done();
+	});
+
+	it('should shuffle and unsuffle array with object seed', function(done) {
+		var seed = {Kappa:true};
+		var resp = shuffleSeed.shuffle(a,seed);
+		var unshuffle = shuffleSeed.unshuffle(resp,seed);
+
+		console.log(seed)
+		console.log(resp)
+		console.log(unshuffle);
+		expect(unshuffle).to.deep.equal(a);
+		expect(unshuffle).to.have.length(a.length);
+		expect(resp).to.deep.not.equal(a);
+		expect(resp).to.have.length(a.length);
+		done();
+	});
+
+	it('should shuffle and unsuffle array with array seed', function(done) {
+		var seed = ['K','a','p','p','a'];
+		var resp = shuffleSeed.shuffle(a,seed);
+		var unshuffle = shuffleSeed.unshuffle(resp,seed);
+
+		console.log(resp)
+		console.log(unshuffle);
+		expect(unshuffle).to.deep.equal(a);
+		expect(unshuffle).to.have.length(a.length);
+		expect(resp).to.deep.not.equal(a);
+		expect(resp).to.have.length(a.length);
+		done();
+	});
+
 })

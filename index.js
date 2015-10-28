@@ -7,23 +7,10 @@ var extend = function(obj) {
 	return obj;
 }
 
-var getMap = function(size,seed){
-	seed = seed || 'none';
-	var rng = seedrandom(seed);
-	var resp = [];
-	var keys = [];
-	var rand = function(min,max){
-		return Math.floor(rng() * (max - min + 1)) + min;
-	}
-
-	for(var i=0;i<size;i++) keys.push(i);
-	for(var i=0;i<size;i++){
-		var r = rand(0,keys.length-1);
-		var g = keys[r];
-		keys.splice(r,1);
-		resp.push(g);
-	}
-	return resp;
+var seedify = function(seed){
+	if (util.isNumber(seed) || util.isString(seed)) return seed;
+	if (isNaN(seed)) return Number(String((this.strSeed = seed)).split('').map(function(x){return x.charCodeAt(0)}).join(''));
+	return seed;
 }
 
 var seedRand = function(func,min,max){
@@ -32,7 +19,7 @@ var seedRand = function(func,min,max){
 
 self.shuffle = function(arr,seed){
 	if (!util.isArray(arr)) return null;
-	seed = seed || 'none';
+	seed = seedify(seed) || 'none';
 
 	var size = arr.length;
 	var rng = seedrandom(seed);
@@ -51,7 +38,7 @@ self.shuffle = function(arr,seed){
 
 self.unshuffle = function(arr,seed){
 	if (!util.isArray(arr)) return null;
-	seed = seed || 'none';
+	seed = seedify(seed) || 'none';
 
 	var size = arr.length;
 	var rng = seedrandom(seed);
