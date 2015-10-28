@@ -1,4 +1,7 @@
 # Seed-shuffle
+
+[![Build Status](https://travis-ci.org/webcaetano/seed-shuffle.svg)](https://travis-ci.org/webcaetano/seed-shuffle) 
+
 Nodejs module to Shuffle an Array with seed :seedling:
 
 
