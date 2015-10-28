@@ -1,0 +1,26 @@
+{
+  "name": "shuffle-seed",
+  "version": "0.0.1",
+  "description": "Shuffle Array based on a Seed",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "keywords": [
+    "array",
+    "seed",
+    "shuffle",
+    "shuffle",
+    "seed",
+    "random"
+  ],
+  "author": "Andre Caetano",
+  "license": "MIT",
+  "dependencies": {
+    "seedrandom": "^2.4.2"
+  },
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "mocha": "^2.3.3"
+  }
+}
