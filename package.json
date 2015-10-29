@@ -20,8 +20,8 @@
     "seedrandom": "^2.4.2"
   },
   "repository": {
-    "name": "seed-shuffle",
-    "url": "https://github.com/webcaetano/seed-shuffle"
+    "name": "shuffle-seed",
+    "url": "https://github.com/webcaetano/shuffle-seed"
   },
   "devDependencies": {
     "chai": "^3.4.0",

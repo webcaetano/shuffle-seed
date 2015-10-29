@@ -1,6 +1,6 @@
-# Seed-shuffle
+# shuffle-seed
 
-[![Build Status](https://travis-ci.org/webcaetano/seed-shuffle.svg)](https://travis-ci.org/webcaetano/seed-shuffle) [![npm version](https://badge.fury.io/js/shuffle-seed.svg)](https://badge.fury.io/js/shuffle-seed)
+[![Build Status](https://travis-ci.org/webcaetano/shuffle-seed.svg)](https://travis-ci.org/webcaetano/shuffle-seed) [![npm version](https://badge.fury.io/js/shuffle-seed.svg)](https://badge.fury.io/js/shuffle-seed)
 
 Nodejs module to Shuffle an Array with seed :seedling:
 
@@ -27,4 +27,4 @@ shuffleSeed.unshuffle(resp,"Kappa");
 
 -------------------
 
-The MIT [License](https://raw.githubusercontent.com/webcaetano/seed-shuffle/master/LICENSE)
+The MIT [License](https://raw.githubusercontent.com/webcaetano/shuffle-seed/master/LICENSE)
