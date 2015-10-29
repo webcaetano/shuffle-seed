@@ -1,0 +1,28 @@
+{
+  "name": "shuffle-seed",
+  "main": "index.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/webcaetano/seed-shuffle",
+  "authors": [
+    "Andre Caetano <dezaodoido@gmail.com>"
+  ],
+  "description": "Shuffle Seed Array",
+  "keywords": [
+    "array",
+    "shuffle",
+    "seed",
+    "shuffle",
+    "seed"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "seedrandom": "~2.4.2"
+  }
+}
