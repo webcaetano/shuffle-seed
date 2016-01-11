@@ -25,6 +25,9 @@ shuffleSeed.unshuffle(resp,"Kappa");
 // result ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 ```
 
+
+[![npm](https://nodei.co/npm/shuffle-seed.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/shuffle-seed)
+
 -------------------
 
 The MIT [License](https://raw.githubusercontent.com/webcaetano/shuffle-seed/master/LICENSE)
