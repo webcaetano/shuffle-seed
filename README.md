@@ -1,6 +1,11 @@
-# shuffle-seed
+# shuffle-seed [![npm][npm-img]][npm-url] [![travis][travis-img]][travis-url] ![filesize][file-size-img]
 
-[![Build Status](https://travis-ci.org/webcaetano/shuffle-seed.svg)](https://travis-ci.org/webcaetano/shuffle-seed) [![npm version](https://badge.fury.io/js/shuffle-seed.svg)](https://badge.fury.io/js/shuffle-seed) ![File Size](https://badge-size.herokuapp.com/webcaetano/shuffle-seed/master/shuffle-seed.min.js.svg?style=flat-square)
+[npm-img]: https://img.shields.io/npm/v/shuffle-seed.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/shuffle-seed
+[travis-img]: https://img.shields.io/travis/webcaetano/shuffle-seed.svg?style=flat-square
+[travis-url]: https://travis-ci.org/webcaetano/shuffle-seed
+[file-size-img]: https://badge-size.herokuapp.com/webcaetano/shuffle-seed/master/shuffle-seed.min.js.svg?style=flat-square
+
 
 Nodejs module to Shuffle an Array with seed :seedling:
 
