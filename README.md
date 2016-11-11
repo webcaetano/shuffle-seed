@@ -15,7 +15,7 @@ Array Shuffle Seed based on module [davidbau/seedrandom](https://github.com/davi
 ## Installation 
 
 ```
-npm install suffle-seed
+npm install shuffle-seed
 ```
 
 ## Usage :
