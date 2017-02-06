@@ -17,7 +17,7 @@
   "author": "Andre Caetano",
   "license": "MIT",
   "dependencies": {
-    "seedrandom": "^2.4.2"
+    "seedrandom": "git://github.com/jozan/seedrandom.git#875e95a62b83083df6e72e015d0949707a093941"
   },
   "repository": {
     "name": "shuffle-seed",
