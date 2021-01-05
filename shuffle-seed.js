@@ -1,7 +1,8 @@
 ;(function() {
+	var seedrandom = require('seedrandom');
+
 	var self = {};
 
-	if(Math.seedrandom) seedrandom = Math.seedrandom;
 
 	var isArray = function($){
 		return Object.prototype.toString.call( $ ) === '[object Array]'
