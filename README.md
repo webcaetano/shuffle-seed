@@ -1,3 +1,5 @@
+# deprecated
+
 # shuffle-seed [![npm][npm-img]][npm-url] [![travis][travis-img]][travis-url] ![filesize][file-size-img]
 
 [npm-img]: https://img.shields.io/npm/v/shuffle-seed.svg?style=flat-square
