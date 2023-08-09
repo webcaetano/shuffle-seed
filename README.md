@@ -1,4 +1,4 @@
-# deprecated
+# [DEPRECATED] 
 
 # shuffle-seed [![npm][npm-img]][npm-url] [![travis][travis-img]][travis-url] ![filesize][file-size-img]
 
